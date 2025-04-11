@@ -15,6 +15,8 @@ import Hdr from '../../components/hdr/hdr';
 import Flashcard from '../../components/flashcard/flashcard';
 import Pricing from '../../components/price/Pricing';
 import { useEffect } from "react";
+import ItemForm from '../../components/item-form/itemform';
+import DrawerMobileNavigation from '../../components/DrawerMobileNavigation/DrawerMobileNavigation';
 
 
 
@@ -89,6 +91,7 @@ function Header() {
     
 
 <Faq/>
+{/* <ItemForm/> */}
 
 
 
@@ -96,6 +99,9 @@ function Header() {
 
 
 <flashcard/>
+
+
+
 
       
     </>

@@ -24,7 +24,7 @@ function Hdr() {
             </li>
 
             <li className="nav__item">
-              <Link to="/login" className="nav__link">
+              <Link to="/signup" className="nav__link">
                 <i className="ri-arrow-right-up-line"></i>
                 <span>Login / Register</span>
               </Link>
