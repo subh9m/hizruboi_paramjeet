@@ -11,7 +11,7 @@ const Product = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const today = new Date().toISOString().split('T')[0]; // format: YYYY-MM-DD
+    const today = new Date().toISOString().split('T')[0];
     if (expiryDate <= today) {
       setExpiryError(true);
       return;
@@ -84,8 +84,13 @@ const Product = () => {
               </span>
             )}
           </div>
-          <button type="submit">Submit</button>
+
+          {/* Scoped Submit Button Wrapper */}
+          <div className="product-form-submit-wrapper">
+            <button type="submit">Submit</button>
+          </div>
         </form>
+
         <SnackbarWithDecorators
           open={snackbarOpen}
           onClose={() => setSnackbarOpen(false)}
